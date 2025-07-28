@@ -1,27 +1,23 @@
-// TODO: Create a class called Student with name, rollNumber, and grade
-class Student {
-    String name;
-    int rollNumber;
-    char grade;
-
-    // TODO: Create a method to display student details
-    Student(String name, int rollNumber, char grade) {
-        this.name = name;
-        this.rollNumber = rollNumber;
-        this.grade = grade;
-    }
-
-    void displayDetails() {
-        System.out.println("Student name: " + name);
-        System.out.println("Student rollNumber: " + rollNumber);
-        System.out.println("Student grade: " + grade);
-    }
-}
+class Student{ 
+     String name;
+     int rollNumber;
+     String grade; 
+     
+     public Student(String name, int rollNumber, String grade){
+          this.name=name;
+          this.rollNumber=rollNumber;
+          this.grade=grade; 
+     }
+     public void displayDetails(){ 
+           System.out.println("Name : " +name);
+           System.out.println("Roll No: " +rollNumber);
+           System.out.println("Grade: " +grade); 
+     } 
+} 
 
 public class Main {
-    public static void main(String[] args) {
-        // TODO: Create a Student object and call the method to display details
-        Student student = new Student("Sreya", 70, 'A');
-        student.displayDetails();
+      public static void main(String[] args) {
+       Student student1 = new Student("Sreya Hrishikesh", 70, "A"); 
+       student1.displayDetails(); 
     }
 }
